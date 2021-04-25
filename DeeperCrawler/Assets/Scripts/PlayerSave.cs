@@ -4,7 +4,7 @@ using UnityEngine;
 using System.IO;
 using SimpleJSON;
 
-public class Player : MonoBehaviour {
+public class PlayerSave : MonoBehaviour {
 
     public string Name;
     public int Level;
@@ -51,7 +51,7 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        if (Input.GetKeyDown(KeyCode.S)) Save();
-        if (Input.GetKeyDown(KeyCode.L)) Load();
+        if (Input.GetKeyDown(KeyCode.F1)) Save();
+        if (Input.GetKeyDown(KeyCode.F2)) Load();
     }
 }
