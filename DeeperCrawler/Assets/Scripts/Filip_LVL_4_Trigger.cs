@@ -17,6 +17,7 @@ public class Filip_LVL_4_Trigger : MonoBehaviour
         if (coll.tag == "NextLevel")
         {
             SceneManager.LoadScene("Main_Menu");
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 
