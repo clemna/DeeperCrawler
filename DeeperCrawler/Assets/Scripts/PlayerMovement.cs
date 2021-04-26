@@ -35,12 +35,12 @@ public class PlayerMovement : MonoBehaviour
 
     void ProcessInputs()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Attack();
-        }
-        else
-        {
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    Attack();
+        //}
+        //else
+        //{
             float moveX = Input.GetAxisRaw("Horizontal");
             float moveY = Input.GetAxisRaw("Vertical");
 
@@ -49,12 +49,12 @@ public class PlayerMovement : MonoBehaviour
             moveDirection = new Vector2(moveX, moveY).normalized;
         }
 
-    }
+    //}
 
-    private void Attack()
-    {
-        animator.SetTrigger("Attack");
-    }
+    //private void Attack()
+    //{
+    //    animator.SetTrigger("Attack");
+    //}
 
     private void Move()
     {
