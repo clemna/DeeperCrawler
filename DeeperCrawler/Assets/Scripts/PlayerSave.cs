@@ -18,9 +18,9 @@ public class PlayerSave : MonoBehaviour {
         playerJson.Add("HP", HP);
         //POSITION
         JSONArray position = new JSONArray();
-        position.Add(transform.position.x);
-        position.Add(transform.position.y);
-        position.Add(transform.position.z);
+        position.Add(Mathf.Round(transform.position.x));
+        position.Add(Mathf.Round(transform.position.y));
+        position.Add(Mathf.Round(transform.position.z));
         playerJson.Add("Position", position);
 
         //SAVE JSON IN COMPUTER

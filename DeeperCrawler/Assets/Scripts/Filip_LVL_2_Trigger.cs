@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Filip_LVL_Trigger : MonoBehaviour
+public class Filip_LVL_2_Trigger : MonoBehaviour
 {
     public Vector3 spawnPoint;
 
-    public void OnTriggerEnter2D (Collider2D coll)
+    public void OnTriggerEnter2D(Collider2D coll)
     {
         if (coll.tag == "Water")
         {
@@ -16,7 +16,7 @@ public class Filip_LVL_Trigger : MonoBehaviour
 
         if (coll.tag == "NextLevel")
         {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("LVL 3");
         }
     }
 
@@ -24,5 +24,4 @@ public class Filip_LVL_Trigger : MonoBehaviour
     {
         transform.position = spawnPoint;
     }
-
 }

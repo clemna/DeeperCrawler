@@ -9,7 +9,7 @@ public class Main_Menu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("TestScene");
+        SceneManager.LoadScene("LVL 1");
     }
 
     public void Credits()
