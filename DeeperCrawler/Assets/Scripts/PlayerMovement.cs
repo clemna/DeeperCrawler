@@ -7,11 +7,9 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public float movementSpeed = 5;
-    public float roationSpeed = 5;
 
     private Rigidbody2D rb;
     private Vector2 moveDirection;
-    private Vector2 moveDirectionSprite;
     private Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -44,8 +42,7 @@ public class PlayerMovement : MonoBehaviour
             float moveX = Input.GetAxisRaw("Horizontal");
             float moveY = Input.GetAxisRaw("Vertical");
 
-            float rotation = -moveX * roationSpeed;
-            transform.Rotate(Vector3.forward * rotation);
+            
             moveDirection = new Vector2(moveX, moveY).normalized;
         }
 
